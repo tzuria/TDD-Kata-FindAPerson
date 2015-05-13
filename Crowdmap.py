@@ -14,7 +14,7 @@ class Crowdmap(object):
 		for i in self.list:
 			if i.find(name) != -1 and foundOne:
 				return False
-			if i.find(name):
+			if i.find(name) != -1:
 				foundOne = True
 	
 		return True
